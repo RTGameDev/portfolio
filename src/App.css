@@ -1,6 +1,271 @@
+@font-face {
+  font-family: fira_code;
+  src: url(./assets/fonts/FiraCode-VariableFont_wght.ttf);
+}
+
+
+
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  background-color: #282C33;
+  padding: 0 10vw;
+  color: rgb(150, 150, 150);
+  font-family: fira_code;
+}
+
+
+/* ////////// Header ////////// */
+
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  padding: 3vh 0;
+}
+
+.logo img {
+  height: 10vh;
+}
+
+nav {
+  width: 40%;
+}
+
+nav ul {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul a:hover {
+  color: white;
+}
+
+nav ul a li span {
+  color: #C778DD;
+}
+
+#header {
+  align-self: flex-end;
+
+  img {
+    height: 15vh;
+  }
+}
+
+/* ////////// Main ////////// */
+
+
+/* ////////// Section 1 ////////// */
+
+
+.title {
+  display: flex;
+  align-items: center;
+  margin: 8vh 0;
+}
+
+section span {
+  color: #C778DD;
+}
+
+h2,
+h3,
+h5 {
+  color: white;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.title_line {
+  height: 1px;
+  width: 15vw;
+  background-color: #C778DD;
+  margin-left: 3vw;
+}
+
+.title a {
+  margin-left: auto;
+  color: white;
+}
+
+.title a:hover {
+  color: #C778DD;
+}
+
+h4 {
+  color: white;
   text-align: center;
+}
+
+
+.cards_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.cards_wrapper span {
+  color: white;
+}
+
+.cards_wrapper img {
+  height: 25vh;
+}
+
+.card {
+  border: 1px solid rgb(150, 150, 150);
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards_wrapper a {
+  color: white;
+}
+
+.web_description,
+.used_languages {
+  padding: 1vw;
+  border-top: 1px solid rgb(150, 150, 150);
+}
+
+.web_description {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.web_description a {
+  border: 1px solid rgb(150, 150, 150);
+  width: fit-content;
+  padding: 1vh;
+}
+
+.web_description a:hover {
+  background-color: #C778DD;
+}
+
+
+.skills {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  font-size: 32px;
+  border: 1px solid rgb(150, 150, 150);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  width: 15vw;
+}
+
+
+/* ////////// Section 2 ////////// */
+
+
+.skills_decor {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.decor_1 {
+  display: flex;
+  justify-content: space-around;
+  height: 17vh;
+  width: 25vw;
+
+  .decor_1:nth-child(1) img {
+    height: 8vh;
+    align-self: flex-end;
+  }
+}
+
+.decor_2 {
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  width: 25vw;
+
+  .decor_1:first-child(1) img {
+    height: 20vh;
+  }
+
+  img {
+    height: 8vh;
+  }
+
+  .decor_1:nth-child(2) img {
+    align-self: flex-end;
+  }
+}
+
+.decor_2 img:first-child {
+  height: 5vh;
+  align-self: center;
+}
+
+.boxes div {
+  border: 1px solid rgb(150, 150, 150);
+  height: fit-content;
+}
+
+.boxes h3 {
+  border-bottom: 1px solid rgb(150, 150, 150);
+  padding: 1vw;
+}
+
+.boxes p {
+  padding: 1vh 1vw;
+}
+
+.box_1 {
+  grid-area: languages;
+}
+
+.box_2 {
+  grid-area: databases;
+}
+
+.box_3 {
+  grid-area: framework;
+}
+
+.box_4 {
+  grid-area: tools;
+}
+
+.box_5 {
+  grid-area: other;
+}
+
+
+.boxes {
+  display: grid;
+  grid-template-areas:
+    'languages databases tools'
+    'languages other framework'
+  ;
+  gap: 2vh;
 }
