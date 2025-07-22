@@ -80,7 +80,7 @@ function App() {
                 <img src={rectangle} alt="decor_img" />
               </div>
               <div class="decor_2">
-                <a href="#header" ><img src={logo} alt="logo_img" /></a>
+                <a href="#header" ><img className='lower_logo' src={logo} alt="logo_img" /></a>
                 <img src={dots} alt="decor_img" />
                 <img src={rectangle} alt="decor_img" />
               </div>

@@ -188,43 +188,26 @@ h4 {
   display: flex;
   flex-direction: column;
   height: fit-content;
+  width: 25vw;
 }
 
 .decor_1 {
   display: flex;
   justify-content: space-around;
-  height: 17vh;
-  width: 25vw;
-
-  .decor_1:nth-child(1) img {
-    height: 8vh;
-    align-self: flex-end;
-  }
+  margin-bottom: 5vh;
 }
 
 .decor_2 {
   display: flex;
   justify-content: space-between;
-  height: 20vh;
-  width: 25vw;
-
-  .decor_1:first-child(1) img {
-    height: 20vh;
-  }
 
   img {
     height: 8vh;
   }
 
-  .decor_1:nth-child(2) img {
-    align-self: flex-end;
-  }
 }
 
-.decor_2 img:first-child {
-  height: 5vh;
-  align-self: center;
-}
+
 
 .boxes div {
   border: 1px solid rgb(150, 150, 150);
